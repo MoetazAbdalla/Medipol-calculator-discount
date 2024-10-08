@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Medipol Discount Calculator Extension",
+  "version": "1.0",
+  "description": "A discount calculator for different majors and nationalities",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ]
+}

@@ -1,0 +1,167 @@
+/* General Page Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main container for both form and discounts */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* First Column: Form Layout */
+.form-column {
+    flex: 1;
+    max-width: 48%; /* Reduced width to fit more evenly */
+    padding: 20px;
+    margin-right: 10px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Second Column: Discounts Layout */
+.discount-column {
+    flex: 1;
+    max-width: 48%; /* Reduced width to fit more evenly */
+    padding: 20px;
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form and Additional Discounts Layout */
+h1, h3 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    font-weight: 600;
+}
+
+/* Aligning checkboxes and labels in a flexbox container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.label-inline {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.select-inline {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}   
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Output Results Section */
+#resultSection {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#resultSection h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#resultSection p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .form-column, .discount-column {
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
