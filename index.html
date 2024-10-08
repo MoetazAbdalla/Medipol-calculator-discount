@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- First Column: Form Layout -->
+        <div class="form-column">
+            <h1>Discount Calculator</h1>
+            <form>
+                <!-- Major Selection -->
+                <label for="major">Major:</label>
+                <select id="major">
+                    <!-- Majors with Over 4 Years Duration -->
+            <optgroup label="Majors Over 4 Years">
+                <option value="">Select Major</option>
+                <option value="International School of Medicine 100% English" data-duration="Over 4 years" data-language="100% English">International School of Medicine 100% English</option>
+                <option value="School of Medicine 30% English &amp; 70% Turkish" data-duration="Over 4 years" data-language="30% English & 70% Turkish">School of Medicine 30% English &amp; 70% Turkish</option>
+                <option value="School of Dentistry 100% English" data-duration="Over 4 years" data-language="100% English">School of Dentistry 100% English</option>
+                <option value="School of Dentistry 30% English 70% Turkish" data-duration="Over 4 years" data-language="30% English 70% Turkish">School of Dentistry 30% English 70% Turkish</option>
+                <option value="School of Pharmacy 100% English" data-duration="Over 4 years" data-language="100% English">School of Pharmacy 100% English</option>
+                <option value="School of Pharmacy" data-duration="Over 4 years" data-language="Turkish">School of Pharmacy</option>
+            </optgroup>
+
+            <!-- Majors with 4 Years Duration -->
+            <optgroup label="Majors with 4 Years">
+                <option value="School of Law 30% English 70% Turkish " data-duration="4 years" data-language="30% English 70% Turkish">School of Law 30% English 70% Turkish</option>
+                <option value="School of Law" data-duration="4 years" data-language="30% English 70% Turkish">School of Law</option>
+                <option value="Nursing 100% English" data-duration="4 years" data-language="100% English">Nursing 100% English</option>
+                <option value="Nursing" data-duration="4 years" data-language="Turkish">Nursing</option>
+                <option value="Physiotherapy and Rehabilitation 100% English" data-duration="4 years" data-language="100% English">Physiotherapy and Rehabilitation 100% English</option>
+                <option value="Physiotherapy and Rehabilitation 100% Turkish" data-duration="4 years" data-language="Turkish">Physiotherapy and Rehabilitation 100% Turkish</option>
+                <option value="Nutrition and Dietetics" data-duration="4 years" data-language="Turkish">Nutrition and Dietetics</option>
+                <option value="Health Management 100% English" data-duration="4 years" data-language="100% English">Health Management 100% English</option>
+                <option value="Health Management" data-duration="4 years" data-language="Turkish">Health Management</option>
+                <option value="Audiology" data-duration="4 years" data-language="Turkish">Audiology</option>
+                <option value="Orthotics and Prosthetics" data-duration="4 years" data-language="Turkish">Orthotics and Prosthetics</option>
+                <option value="Child Development" data-duration="4 years" data-language="Turkish">Child Development</option>
+                <option value="Midwifery" data-duration="4 years" data-language="Turkish">Midwifery</option>
+                <option value="Ergotherapy" data-duration="4 years" data-language="Turkish">Ergotherapy</option>
+                <option value="Social Services" data-duration="4 years" data-language="Turkish">Social Services</option>
+                <option value="Architecture" data-duration="4 years" data-language="Turkish">Architecture</option>
+                <option value="Architecture 100% English" data-duration="4 years" data-language="100% English">Architecture 100% English</option>
+                <option value="Aviation Management" data-duration="4 years" data-language="Turkish">Aviation Management</option>
+                <option value="Biomedical Engineering 100% English" data-duration="4 years" data-language="100% English">Biomedical Engineering 100% English</option>
+                <option value="Business Administration" data-duration="4 years" data-language="Turkish">Business Administration</option>
+                <option value="Business Administration 100% English" data-duration="4 years" data-language="100% English">Business Administration 100% English</option>
+                <option value="Civil Engineering" data-duration="4 years" data-language="Turkish">Civil Engineering</option>
+                <option value="Civil Engineering 100% English" data-duration="4 years" data-language="100% English">Civil Engineering 100% English</option>
+                <option value="Computer Engineering 100% English" data-duration="4 years" data-language="100% English">Computer Engineering 100% English</option>
+                <option value="Economics and Finance 100% English" data-duration="4 years" data-language="100% English">Economics and Finance 100% English</option>
+                <option value="Electrical-Electronic Engineering 100% English" data-duration="4 years" data-language="100% English">Electrical-Electronic Engineering 100% English</option>
+                <option value="English Teaching 100% English" data-duration="4 years" data-language="100% English">English Teaching 100% English</option>
+                <option value="Gastronomy and Culinary Arts" data-duration="4 years" data-language="Turkish">Gastronomy and Culinary Arts</option>
+                <option value="Industrial Design" data-duration="4 years" data-language="Turkish">Industrial Design</option>
+                <option value="Industrial Engineering 100% English" data-duration="4 years" data-language="100% English">Industrial Engineering 100% English</option>
+                <option value="Interior Architecture and Environmental Design" data-duration="4 years" data-language="Turkish">Interior Architecture and Environmental Design</option>
+                <option value="Interior Architecture and Environmental Design 100% English" data-duration="4 years" data-language="100% English">Interior Architecture and Environmental Design 100% English</option>
+                <option value="International Trade and Finance" data-duration="4 years" data-language="Turkish">International Trade and Finance</option>
+                <option value="International Trade and Finance 100% English" data-duration="4 years" data-language="100% English">International Trade and Finance 100% English</option>
+                <option value="Journalism" data-duration="4 years" data-language="Turkish">Journalism</option>
+                <option value="Logistic Management" data-duration="4 years" data-language="Turkish">Logistic Management</option>
+                <option value="Logistic Management 100% English" data-duration="4 years" data-language="100% English">Logistic Management 100% English</option>
+                <option value="Management Information Systems" data-duration="4 years" data-language="Turkish">Management Information Systems</option>
+                <option value="Management Information Systems 100% English" data-duration="4 years" data-language="100% English">Management Information Systems 100% English</option>
+                <option value="Media and Visual Arts" data-duration="4 years" data-language="Turkish">Media and Visual Arts</option>
+                <option value="New Media and Communication Systems" data-duration="4 years" data-language="Turkish">New Media and Communication Systems</option>
+                <option value="Political Science and International Relations 100% English" data-duration="4 years" data-language="100% English">Political Science and International Relations 100% English</option>
+                <option value="Political Science and Public Administration" data-duration="4 years" data-language="Turkish">Political Science and Public Administration</option>
+                <option value="Political Science and Public Administration 100% English" data-duration="4 years" data-language="100% English">Political Science and Public Administration 100% English</option>
+                <option value="Preschool Teaching" data-duration="4 years" data-language="Turkish">Preschool Teaching</option>
+                <option value="Primary Mathematics Teaching" data-duration="4 years" data-language="Turkish">Primary Mathematics Teaching</option>
+                <option value="Psychological Counselling and Guidance" data-duration="4 years" data-language="Turkish">Psychological Counselling and Guidance</option>
+                <option value="Psychological Counselling and Guidance 100% English" data-duration="4 years" data-language="100% English">Psychological Counselling and Guidance 100% English</option>
+                <option value="Psychology" data-duration="4 years" data-language="Turkish">Psychology</option>
+                <option value="Psychology 100% English" data-duration="4 years" data-language="100% English">Psychology 100% English</option>
+                <option value="Public Relations and Advertising" data-duration="4 years" data-language="Turkish">Public Relations and Advertising</option>
+                <option value="Public Relations and Advertising 100% English" data-duration="4 years" data-language="100% English">Public Relations and Advertising 100% English</option>
+                <option value="Radio Television and Cinema" data-duration="4 years" data-language="Turkish">Radio Television and Cinema</option>
+                <option value="Special Education Teaching" data-duration="4 years" data-language="Turkish">Special Education Teaching</option>
+                <option value="Speech and Language Therapy" data-duration="4 years" data-language="Turkish">Speech and Language Therapy</option>
+                <option value="Speech and Language Therapy 100% English" data-duration="4 years" data-language="100% English">Speech and Language Therapy 100% English</option>
+                <option value="Turkish Music Art" data-duration="4 years" data-language="Turkish">Turkish Music Art</option>
+                <option value="Urban Design and Landscape Architecture" data-duration="4 years" data-language="Turkish">Urban Design and Landscape Architecture</option>
+                <option value="Visual Communication Design" data-duration="4 years" data-language="Turkish">Visual Communication Design</option>
+            </optgroup>
+
+                <!-- Add other majors in this group with their data-language -->
+            </optgroup>
+
+            <!-- Majors with 2 Years Duration -->
+            <optgroup label="Majors with 2 Years">
+                <option value="Justice" data-duration="2 years" data-language="Turkish">Justice</option>
+                <option value="Human Resources Management" data-duration="2 years" data-language="Turkish">Human Resources Management</option> <!-- Adjusted to 2 years -->
+                <option value="Banking and Insurance" data-duration="2 years" data-language="Turkish">Banking and Insurance</option> <!-- Adjusted to 2 years -->
+                <option value="Oral and Dental Health" data-duration="2 years" data-language="Turkish">Oral and Dental Health</option>
+                <option value="Operating Room Services" data-duration="2 years" data-language="Turkish">Operating Room Services</option>
+                <option value="Anesthesia 100% English" data-duration="2 years" data-language="100% English">Anesthesia 100% English</option>
+                <option value="Anesthesia" data-duration="2 years" data-language="Turkish">Anesthesia</option>
+                <option value="Dental Prosthesis Technology" data-duration="2 years" data-language="Turkish">Dental Prosthesis Technology</option>
+                <option value="Dialysis" data-duration="2 years" data-language="Turkish">Dialysis</option>
+                <option value="Pharmacy Services" data-duration="2 years" data-language="Turkish">Pharmacy Services</option>
+                <option value="Electroneurophysiology" data-duration="2 years" data-language="Turkish">Electroneurophysiology</option>
+                <option value="Physiotherapy 100% English" data-duration="2 years" data-language="100% English">Physiotherapy 100% English</option>
+                <option value="Physiotherapy" data-duration="2 years" data-language="Turkish">Physiotherapy</option>
+                <option value="First and Emergency Aid 100% English" data-duration="2 years" data-language="100% English">First and Emergency Aid 100% English</option>
+                <option value="First and Emergency Aid" data-duration="2 years" data-language="Turkish">First and Emergency Aid</option>
+                <option value="Occupational Health and Safety" data-duration="2 years" data-language="Turkish">Occupational Health and Safety</option>
+                <option value="Audiometry" data-duration="2 years" data-language="Turkish">Audiometry</option>
+                <option value="Opticianry" data-duration="2 years" data-language="Turkish">Opticianry</option>
+                <option value="Pathology Laboratory Techniques" data-duration="2 years" data-language="Turkish">Pathology Laboratory Techniques</option>
+                <option value="Radiotherapy" data-duration="2 years" data-language="Turkish">Radiotherapy</option>
+                <option value="Management of Health Institutions" data-duration="2 years" data-language="Turkish">Management of Health Institutions</option>
+                <option value="Medical Documentation and Secretary" data-duration="2 years" data-language="Turkish">Medical Documentation and Secretary</option>
+                <option value="Medical Imaging Techniques" data-duration="2 years" data-language="Turkish">Medical Imaging Techniques</option>
+                <option value="Medical Laboratory Techniques" data-duration="2 years" data-language="Turkish">Medical Laboratory Techniques</option>
+                <option value="Computer Programming" data-duration="2 years" data-language="Turkish">Computer Programming</option>
+                <option value="Biomedical Device Technology" data-duration="2 years" data-language="Turkish">Biomedical Device Technology</option>
+                <option value="Interior Design" data-duration="2 years" data-language="Turkish">Interior Design</option>
+                <option value="Construction Technology" data-duration="2 years" data-language="Turkish">Construction Technology</option>
+                <option value="Architectural Restoration" data-duration="2 years" data-language="Turkish">Architectural Restoration</option>
+                <option value="Civil Aviation Transportation Management" data-duration="2 years" data-language="Turkish">Civil Aviation Transportation Management</option>
+                <option value="Foreign Trade" data-duration="2 years" data-language="Turkish">Foreign Trade</option>
+                <option value="Public Relations and Publicity" data-duration="2 years" data-language="Turkish">Public Relations and Publicity</option>
+                <option value="Logistics" data-duration="2 years" data-language="Turkish">Logistics</option>
+                <option value="Finance" data-duration="2 years" data-language="Turkish">Finance</option>
+                <option value="Accounting and Taxation" data-duration="2 years" data-language="Turkish">Accounting and Taxation</option>
+                <option value="Radio and Television Programming" data-duration="2 years" data-language="Turkish">Radio and Television Programming</option>
+                <option value="Civil Aviation Cabin Services" data-duration="2 years" data-language="Turkish">Civil Aviation Cabin Services</option>
+                <option value="Sports Management" data-duration="2 years" data-language="Turkish">Sports Management</option>
+                <option value="Applied English and Translation 50% English 50% Turkish" data-duration="2 years" data-language="50% English & 50% Turkish">Applied English and Translation 50% English 50% Turkish</option>
+                <!-- Add other majors in this group with their data-language -->
+            </optgroup>
+        </select>
+
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="">Select Language</option>
+            <!-- Language options -->
+        </select>
+
+                <!-- Nationality Selection -->
+                <label for="nationality">Nationality:</label>
+                <select id="nationality">
+                    <option value="">--Select Nationality--</option>
+                    <option value="521">Afghanistan</option>
+                    <option value="277">Albania</option>
+                    <option value="278">Algeria</option>
+                    <option value="279">American Samoa</option>
+                    <option value="280">Andorra</option>
+                    <option value="281">Angola</option>
+                    <option value="282">Anguilla</option>
+                    <option value="283">Antarctica</option>
+                    <option value="284">Antigua and Barbuda</option>
+                    <option value="285">Argentina</option>
+                    <option value="286">Armenia</option>
+                    <option value="287">Aruba</option>
+                    <option value="288">Australia</option>
+                    <option value="289">Austria</option>
+                    <option value="290">Azerbaijan</option>
+                    <option value="291">Bahrain</option>
+                    <option value="292">Bangladesh</option>
+                    <option value="293">Barbados</option>
+                    <option value="294">Belarus</option>
+                    <option value="295">Belgium</option>
+                    <option value="296">Belize</option>
+                    <option value="297">Benin</option>
+                    <option value="298">Bermuda</option>
+                    <option value="299">Bhutan</option>
+                    <option value="300">Bolivia</option>
+                    <option value="301">Bosnia and Herzegovina</option>
+                    <option value="302">Botswana</option>
+                    <option value="303">Bouvet Island</option>
+                    <option value="304">Brazil</option>
+                    <option value="305">British Indian Ocean Territory</option>
+                    <option value="306">British Virgin Islands</option>
+                    <option value="307">Brunei</option>
+                    <option value="308">Bulgaria</option>
+                    <option value="309">Burkina Faso</option>
+                    <option value="310">Burundi</option>
+                    <option value="311">Ivory Coast</option>
+                    <option value="312">Cambodia</option>
+                    <option value="313">Cameroon</option>
+                    <option value="314">Canada</option>
+                    <option value="315">Cape Verde</option>
+                    <option value="316">Cayman Islands</option>
+                    <option value="317">Central African Republic</option>
+                    <option value="318">Chad</option>
+                    <option value="319">Chile</option>
+                    <option value="320">China</option>
+                    <option value="321">Christmas Island</option>
+                    <option value="322">Cocos (Keeling) Islands</option>
+                    <option value="323">Colombia</option>
+                    <option value="324">Comoros</option>
+                    <option value="325">Congo</option>
+                    <option value="326">Cook Islands</option>
+                    <option value="327">Costa Rica</option>
+                    <option value="328">Croatia</option>
+                    <option value="329">Cuba</option>
+                    <option value="330">Cyprus</option>
+                    <option value="331">Czech Republic</option>
+                    <option value="332">Democratic Republic of the Congo</option>
+                    <option value="333">Denmark</option>
+                    <option value="334">Djibouti</option>
+                    <option value="335">Dominica</option>
+                    <option value="336">Dominican Republic</option>
+                    <option value="337">East Timor</option>
+                    <option value="338">Ecuador</option>
+                    <option value="10">Egypt</option>
+                    <option value="339">El Salvador</option>
+                    <option value="340">Equatorial Guinea</option>
+                    <option value="341">Eritrea</option>
+                    <option value="342">Estonia</option>
+                    <option value="343">Ethiopia</option>
+                    <option value="344">Faeroe Islands</option>
+                    <option value="345">Falkland Islands</option>
+                    <option value="346">Fiji</option>
+                    <option value="347">Finland</option>
+                    <option value="348">Former Yugoslav Republic of Macedonia</option>
+                    <option value="349">France</option>
+                    <option value="350">Metropolitan France</option>
+                    <option value="351">French Guiana</option>
+                    <option value="352">French Polynesia</option>
+                    <option value="353">French Southern Territories</option>
+                    <option value="354">Gabon</option>
+                    <option value="355">Georgia</option>
+                    <option value="356">Germany</option>
+                    <option value="357">Ghana</option>
+                    <option value="358">Gibraltar</option>
+                    <option value="359">Greece</option>
+                    <option value="360">Greenland</option>
+                    <option value="361">Grenada</option>
+                    <option value="362">Guadeloupe</option>
+                    <option value="363">Guam</option>
+                    <option value="364">Guatemala</option>
+                    <option value="365">Guinea</option>
+                    <option value="366">Guinea-Bissau</option>
+                    <option value="367">Guyana</option>
+                    <option value="368">Haiti</option>
+                    <option value="369">Heard and McDonald Islands</option>
+                    <option value="370">Honduras</option>
+                    <option value="371">Hong Kong</option>
+                    <option value="372">Hungary</option>
+                    <option value="373">Iceland</option>
+                    <option value="374">India</option>
+                    <option value="375">Indonesia</option>
+                    <option value="376">Iran</option>
+                    <option value="377">Iraq</option>
+                    <option value="378">Ireland</option>
+                    <option value="520">Isle of Man</option>
+                    <option value="379">Israel</option>
+                    <option value="380">Italy</option>
+                    <option value="381">Jamaica</option>
+                    <option value="382">Japan</option>
+                    <option value="383">Jordan</option>
+                    <option value="384">Kazakhstan</option>
+                    <option value="385">Kenya</option>
+                    <option value="386">Kiribati</option>
+                    <option value="387">Kosovo</option>
+                    <option value="388">Kuwait</option>
+                    <option value="389">Kyrgyzstan</option>
+                    <option value="390">Laos</option>
+                    <option value="391">Latvia</option>
+                    <option value="392">Lebanon</option>
+                    <option value="393">Lesotho</option>
+                    <option value="394">Liberia</option>
+                    <option value="395">Libya</option>
+                    <option value="396">Liechtenstein</option>
+                    <option value="397">Lithuania</option>
+                    <option value="398">Luxembourg</option>
+                    <option value="399">Macau</option>
+                    <option value="400">Madagascar</option>
+                    <option value="401">Malawi</option>
+                    <option value="402">Malaysia</option>
+                    <option value="403">Maldives</option>
+                    <option value="404">Mali</option>
+                    <option value="405">Malta</option>
+                    <option value="406">Marshall Islands</option>
+                    <option value="407">Martinique</option>
+                    <option value="408">Mauritania</option>
+                    <option value="409">Mauritius</option>
+                    <option value="410">Mayotte</option>
+                    <option value="411">Mexico</option>
+                    <option value="412">Micronesia</option>
+                    <option value="413">Moldova</option>
+                    <option value="414">Monaco</option>
+                    <option value="415">Mongolia</option>
+                    <option value="416">Montenegro</option>
+                    <option value="417">Montserrat</option>
+                    <option value="11">Morocco</option>
+                    <option value="418">Mozambique</option>
+                    <option value="419">Myanmar</option>
+                    <option value="420">Namibia</option>
+                    <option value="421">Nauru</option>
+                    <option value="422">Nepal</option>
+                    <option value="423">Netherlands</option>
+                    <option value="424">Netherlands Antilles</option>
+                    <option value="425">New Caledonia</option>
+                    <option value="426">New Zealand</option>
+                    <option value="427">Nicaragua</option>
+                    <option value="428">Niger</option>
+                    <option value="429">Nigeria</option>
+                    <option value="430">Niue</option>
+                    <option value="431">Norfolk Island</option>
+                    <option value="432">North Korea</option>
+                    <option value="433">Northern Marianas</option>
+                    <option value="434">Norway</option>
+                    <option value="435">Oman</option>
+                    <option value="436">Pakistan</option>
+                    <option value="437">Palau</option>
+                    <option value="438">Palestine</option>
+                    <option value="439">Panama</option>
+                    <option value="440">Papua New Guinea</option>
+                    <option value="441">Paraguay</option>
+                    <option value="442">Peru</option>
+                    <option value="443">Philippines</option>
+                    <option value="444">Pitcairn Islands</option>
+                    <option value="445">Poland</option>
+                    <option value="446">Portugal</option>
+                    <option value="447">Puerto Rico</option>
+                    <option value="448">Qatar</option>
+                    <option value="449">Reunion</option>
+                    <option value="450">Romania</option>
+                    <option value="451">Russia</option>
+                    <option value="452">Rwanda</option>
+                    <option value="453">São Tomé and Príncipe</option>
+                    <option value="454">Saint Helena</option>
+                    <option value="455">St. Pierre and Miquelon</option>
+                    <option value="456">Saint Kitts and Nevis</option>
+                    <option value="457">Saint Lucia</option>
+                    <option value="458">Saint Vincent and the Grenadines</option>
+                    <option value="459">Samoa</option>
+                    <option value="460">San Marino</option>
+                    <option value="461">Saudi Arabia</option>
+                    <option value="462">Senegal</option>
+                    <option value="463">Serbia</option>
+                    <option value="464">Seychelles</option>
+                    <option value="465">Sierra Leone</option>
+                    <option value="466">Singapore</option>
+                    <option value="467">Slovakia</option>
+                    <option value="468">Slovenia</option>
+                    <option value="469">Solomon Islands</option>
+                    <option value="470">Somalia</option>
+                    <option value="471">South Africa</option>
+                    <option value="472">South Georgia and the South Sandwich Islands</option>
+                    <option value="473">South Korea</option>
+                    <option value="474">Spain</option>
+                    <option value="475">Sri Lanka</option>
+                    <option value="476">Sudan</option>
+                    <option value="477">Suriname</option>
+                    <option value="478">Svalbard and Jan Mayen Islands</option>
+                    <option value="479">Swaziland</option>
+                    <option value="480">Sweden</option>
+                    <option value="481">Switzerland</option>
+                    <option value="482">Syria</option>
+                    <option value="483">Taiwan</option>
+                    <option value="484">Tajikistan</option>
+                    <option value="485">Tanzania</option>
+                    <option value="486">Thailand</option>
+                    <option value="487">The Bahamas</option>
+                    <option value="488">The Gambia</option>
+                    <option value="489">Togo</option>
+                    <option value="490">Tokelau</option>
+                    <option value="491">Tonga</option>
+                    <option value="492">Trinidad and Tobago</option>
+                    <option value="493">Tunisia</option>
+                    <option value="494">Turkey</option>
+                    <option value="495">Turkmenistan</option>
+                    <option value="496">Turks and Caicos Islands</option>
+                    <option value="497">Tuvalu</option>
+                    <option value="498">US Virgin Islands</option>
+                    <option value="499">Uganda</option>
+                    <option value="500">Ukraine</option>
+                    <option value="501">United Arab Emirates</option>
+                    <option value="502">United Kingdom</option>
+                    <option value="503">United States</option>
+                    <option value="504">United States Minor Outlying Islands</option>
+                    <option value="505">Uruguay</option>
+                    <option value="506">Uzbekistan</option>
+                    <option value="507">Vanuatu</option>
+                    <option value="508">Vatican City</option>
+                    <option value="509">Venezuela</option>
+                    <option value="510">Vietnam</option>
+                    <option value="511">Wallis and Futuna Islands</option>
+                    <option value="512">Western Sahara</option>
+                    <option value="513">Yemen</option>
+                    <option value="514">Zambia</option>
+                    <option value="515">Zimbabwe</option>
+                    <option value="516">South Sudan</option>
+                    <option value="517">Other</option>
+                    <option value="518">Scotland</option>
+                    <option value="519">Turkish Republic of Northern Cyprus</option>
+                </select> 
+                 
+                <!-- Calculate Button -->
+                    <button type="button" id="calculateButton">Calculate Discount</button>
+
+
+                <!-- Output Results Section -->
+                <div id="resultSection">
+                    <h3>Outputs</h3>
+                    <p id="listFeeDisplay">List Tuition Fee: $0</p>
+                    <p id="finalAmountDisplay">Final Amount to be Paid: $0</p>
+                    <p id="advanceFeeDisplay">Advance Tuition: $0</p>
+                    <p id="depositAmountDisplay">Deposit Amount: $0</p>
+                    <p id="resetAdvanceDisplay">Reset of The Advance: $0</p>
+                    <p id="finalDiscountDisplay">Final Discount Amount: $0</p>
+                    <p id="totalDiscountPercentageDisplay">Total Discount Percentage: 0%</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="discount-column">
+            <h3>Apply Additional Discounts</h3>
+        
+            <!-- Special Countries 15% -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="specialCountriesDiscount" value="15" disabled>
+                <label for="specialCountriesDiscount">Special Countries 15%</label>
+            </div>
+        
+            <!-- Advanced Payment 10% -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="advancedPaymentDiscount" value="10" disabled>
+                <label for="advancedPaymentDiscount">Advanced Payment 10%</label>
+            </div>
+        
+            <!-- Fair Discount 10% -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="fairDiscount" value="10">
+                <label for="fairDiscount">Fair Discount 10%</label>
+            </div>
+        
+            <!-- Successful Scholarship -->
+            <label for="successfulScholarship" class="label-inline">Successful Scholarship</label>
+            <select id="successfulScholarship" class="select-inline">
+                <option value="">Select Scholarship Percentage</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+            </select>
+        
+            <!-- Campaigns -->
+            <label for="Campaigns" class="label-inline">Campaigns (Open Days, Exams, Etc...)</label>
+            <select id="Campaigns" class="select-inline">
+                <option value="">Select Campaign Percentage</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+            </select>
+        </div>
+        
+        
+    </div>
+
+    <!-- Include the script file for discount calculation -->
+    <script src="script.js"></script>
+</body>
+</html>
